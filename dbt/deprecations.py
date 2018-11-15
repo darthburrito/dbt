@@ -14,10 +14,11 @@ class DBTDeprecation(object):
 
 class SqlWhereDeprecation(DBTDeprecation):
     name = "sql_where"
-    description = """The `sql_where` option for incremental models is deprecated and will
-  be removed in a future release. Consult the documentation for more information
+    description = """\
+The `sql_where` option for incremental models is deprecated and will be
+  removed in a future release. Check the docs for more information
 
-  https://docs.getdbt.com/docs/materializations#section-configuring-incremental-models
+  https://docs.getdbt.com/docs/materializations
   """
 
 
