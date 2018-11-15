@@ -12,17 +12,12 @@ class DBTDeprecation(object):
             active_deprecations.add(self.name)
 
 
-class DBTRepositoriesDeprecation(DBTDeprecation):
-    name = "repositories"
-    description = """The dbt_project.yml configuration option 'repositories' is
-  deprecated. Please place dependencies in the `packages.yml` file instead.
-  The 'repositories' option will be removed in a future version of dbt.
+class SqlWhereDeprecation(DBTDeprecation):
+    name = "sql_where"
+    description = """The `sql_where` option for incremental models is deprecated and will
+  be removed in a future release. Consult the documentation for more information
 
-  For more information, see: https://docs.getdbt.com/docs/package-management
-
-  # Example packages.yml contents:
-
-{recommendation}
+  https://docs.getdbt.com/docs/materializations#section-configuring-incremental-models
   """
 
 
@@ -49,7 +44,7 @@ def warn(name, *args, **kwargs):
 active_deprecations = set()
 
 deprecations_list = [
-    DBTRepositoriesDeprecation(),
+    SqlWhereDeprecation(),
     SeedDropExistingDeprecation()
 ]
 
