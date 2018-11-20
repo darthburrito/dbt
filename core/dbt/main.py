@@ -28,7 +28,7 @@ import dbt.deprecations
 from dbt.utils import ExitCodes
 from dbt.config import Project, RuntimeConfig, PROFILES_DIR, read_config, \
     send_anonymous_usage_stats, colorize_output, read_profiles
-from dbt.exceptions import DbtProfileError, DbtProfileError, RuntimeException
+from dbt.exceptions import DbtProfileError, DbtProjectError, RuntimeException
 
 
 PROFILES_HELP_MESSAGE = """
