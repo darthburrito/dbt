@@ -1,43 +1,41 @@
-# dbt
+![dbt logo](/etc/dbt-horizontal.png)
 
-dbt (data build tool) helps analysts write reliable, modular code using a workflow that closely mirrors software development.
+[![Code Climate](https://codeclimate.com/github/fishtown-analytics/dbt/badges/gpa.svg)](https://codeclimate.com/github/fishtown-analytics/dbt)
+[![CircleCI](https://circleci.com/gh/fishtown-analytics/dbt/tree/master.svg?style=svg)](https://circleci.com/gh/fishtown-analytics/dbt/tree/master)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/v01rwd3q91jnwp9m/branch/development?svg=true)](https://ci.appveyor.com/project/DrewBanin/dbt/branch/development)
+[![Slack](https://slack.getdbt.com/badge.svg)](https://slack.getdbt.com)
 
-A dbt project primarily consists of "models". These models are SQL `select` statements that filter, aggregate, and otherwise transform data to facilitate analytics. Analysts use dbt to [aggregate pageviews into sessions](https://github.com/fishtown-analytics/snowplow), calculate [ad spend ROI](https://github.com/fishtown-analytics/facebook-ads), or report on [email campaign performance](https://github.com/fishtown-analytics/mailchimp).
+**[dbt](https://www.getdbt.com/)** (data build tool) enables data analysts and engineers to transform data in their warehouses by simply writing select statements.
 
-These models frequently build on top of one another. Fortunately, dbt makes it easy to [manage relationships](https://docs.getdbt.com/reference#ref) between models, [test](https://docs.getdbt.com/docs/testing) your assumptions, and [visualize](https://graph.sinterdata.com/) your projects.
+These select statements, or "models", form a dbt project. These models frequently build on top of one another - dbt makes it easy to [manage relationships](https://docs.getdbt.com/reference#ref) between models, and [visualize these relationships ](https://docs.getdbt.com/docs/documentation), as well as assure the quality of your transformations through [testing](https://docs.getdbt.com/docs/testing).
 
-Still reading? Check out the [docs](https://docs.getdbt.com/docs/overview) for more information.
+dbt projects are used to [aggregate pageviews into sessions](https://github.com/fishtown-analytics/snowplow), calculate [ad spend ROI](https://github.com/fishtown-analytics/facebook-ads), or report on [email campaign performance](https://github.com/fishtown-analytics/mailchimp).
+
+
 
 ![dbt dag](/etc/dag.png?raw=true)
 
----
-### Getting Started
+# Learn more about dbt
+- Check out the [Introduction to dbt](https://dbt.readme.io/docs/introduction).
+- Read the [dbt Viewpoint](https://dbt.readme.io/docs/viewpoint).
 
-- [What is dbt]?
-- Read the [dbt viewpoint]
-- [Installation]
-- Join the [chat][slack-url] on Slack for live questions and support.
+This repository contains the source code for dbt, which...
 
----
-### The dbt ecosystem
-- Visualize your dbt graph [here](https://graph.sinterdata.com/)
-- Run your dbt projects on a schedule [here](http://sinterdata.com/)
+# Getting Started
+- Learn how to [install dbt](https://docs.getdbt.com/docs/installation)
+- Check out the [documentation](https://docs.getdbt.com/).
+- Productionize your dbt project with [Sinter](https://www.sinterdata.com)
 
----
 
-[![Code Climate](https://codeclimate.com/github/fishtown-analytics/dbt/badges/gpa.svg)](https://codeclimate.com/github/fishtown-analytics/dbt) [![Slack](https://slack.getdbt.com/badge.svg)](https://slack.getdbt.com)
+# Getting Help
+- Join the [chat](http://ac-slackin.herokuapp.com/) on Slack.
+- Check out [dbt Discourse](https://discourse.getdbt.com).
 
-### Testing
+# Reporting Bugs and Contributing Code
+* Want to report a bug or request a feature? Let us know on [Slack](http://ac-slackin.herokuapp.com/), or open [an issue](https://github.com/fishtown-analytics/dbt/issues/new).
+* Want to help us build dbt? Check out the [Contributing Guidelines](/CONTRIBUTING.md)
 
-| service | development | master |
-| --- | --- | --- |
-| CircleCI| [![CircleCI](https://circleci.com/gh/fishtown-analytics/dbt/tree/development.svg?style=svg)](https://circleci.com/gh/fishtown-analytics/dbt/tree/development) | [![CircleCI](https://circleci.com/gh/fishtown-analytics/dbt/tree/master.svg?style=svg)](https://circleci.com/gh/fishtown-analytics/dbt/tree/master) |
-| AppVeyor | [![AppVeyor](https://ci.appveyor.com/api/projects/status/v01rwd3q91jnwp9m/branch/development?svg=true)](https://ci.appveyor.com/project/DrewBanin/dbt/branch/development) | [![AppVeyor](https://ci.appveyor.com/api/projects/status/v01rwd3q91jnwp9m/branch/master?svg=true)](https://ci.appveyor.com/project/DrewBanin/dbt/branch/master) |
-
-[Coverage](https://circleci.com/api/v1/project/fishtown-analytics/dbt/latest/artifacts/0/$CIRCLE_ARTIFACTS/htmlcov/index.html?branch=development)
-
-## Code of Conduct
-
+# Code of Conduct
 Everyone interacting in the dbt project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow the [PyPA Code of Conduct].
 
 
@@ -45,5 +43,5 @@ Everyone interacting in the dbt project's codebases, issue trackers, chat rooms,
 [PyPA Code of Conduct]: https://www.pypa.io/en/latest/code-of-conduct/
 [slack-url]: https://slack.getdbt.com/
 [Installation]: https://docs.getdbt.com/docs/installation
-[What is dbt]: https://docs.getdbt.com/docs/overview
+[What is dbt]: https://docs.getdbt.com/docs/introduction
 [dbt viewpoint]: https://docs.getdbt.com/docs/viewpoint
