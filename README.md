@@ -12,36 +12,25 @@ These select statements, or "models", form a dbt project. These models frequentl
 dbt projects are used to [aggregate pageviews into sessions](https://github.com/fishtown-analytics/snowplow), calculate [ad spend ROI](https://github.com/fishtown-analytics/facebook-ads), or report on [email campaign performance](https://github.com/fishtown-analytics/mailchimp).
 
 
-
 ![dbt dag](/etc/dag.png?raw=true)
 
-# Learn more about dbt
-- Check out the [Introduction to dbt](https://dbt.readme.io/docs/introduction).
-- Read the [dbt Viewpoint](https://dbt.readme.io/docs/viewpoint).
+## Learn More About dbt
+* Check out the [Introduction to dbt](https://dbt.readme.io/docs/introduction).
+* Read the [dbt Viewpoint](https://dbt.readme.io/docs/viewpoint).
 
-This repository contains the source code for dbt, which...
-
-# Getting Started
-- Learn how to [install dbt](https://docs.getdbt.com/docs/installation)
-- Check out the [documentation](https://docs.getdbt.com/).
-- Productionize your dbt project with [Sinter](https://www.sinterdata.com)
+## Getting Started
+* [Install dbt](https://docs.getdbt.com/docs/installation)
+* Read the [documentation](https://docs.getdbt.com/).
+* Productionize your dbt project with [Sinter](https://www.sinterdata.com)
 
 
-# Getting Help
+## Join the dbt Community
 - Join the [chat](http://ac-slackin.herokuapp.com/) on Slack.
-- Check out [dbt Discourse](https://discourse.getdbt.com).
+- Find community posts on the [dbt Discourse](https://discourse.getdbt.com).
 
-# Reporting Bugs and Contributing Code
+## Reporting Bugs and Contributing Code
 * Want to report a bug or request a feature? Let us know on [Slack](http://ac-slackin.herokuapp.com/), or open [an issue](https://github.com/fishtown-analytics/dbt/issues/new).
 * Want to help us build dbt? Check out the [Contributing Guidelines](/CONTRIBUTING.md)
 
-# Code of Conduct
+## Code of Conduct
 Everyone interacting in the dbt project's codebases, issue trackers, chat rooms, and mailing lists is expected to follow the [PyPA Code of Conduct].
-
-
-
-[PyPA Code of Conduct]: https://www.pypa.io/en/latest/code-of-conduct/
-[slack-url]: https://slack.getdbt.com/
-[Installation]: https://docs.getdbt.com/docs/installation
-[What is dbt]: https://docs.getdbt.com/docs/introduction
-[dbt viewpoint]: https://docs.getdbt.com/docs/viewpoint
